@@ -37,18 +37,16 @@
     body {
       overflow-x: hidden;
     }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      background:
-        linear-gradient(90deg, rgba(13, 8, 7, .94) 0%, rgba(28, 13, 8, .74) 42%, rgba(91, 38, 10, .24) 100%),
-        linear-gradient(180deg, rgba(0, 0, 0, .14), rgba(0, 0, 0, .42)),
-        #160d0a;
-    }
-
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgba(13, 8, 7, .88) 0%, rgba(28, 13, 8, .68) 42%, rgba(91, 38, 10, .18) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, .12), rgba(0, 0, 0, .44)),
+    url("assets/raymap-bg.png") center / cover no-repeat;
+}
     body::after {
       content: "";
       position: fixed;
